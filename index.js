@@ -7,12 +7,14 @@ const puppeteer = require('puppeteer');
     //const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await listeners(browser, page);
-    await page.goto('https://animeflv.net');
+    await page.goto('https://suncork.net');
 
 
     const el = await page.evaluate(() => {
-        return document.querySelector('.ListEpisodios');
+        alert('hello');
     });
+
+    
     console.log('EL', el);
 
 
